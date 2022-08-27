@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | strings and string methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>i am kishan vaghela</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore provident enim, iusto explicabo
+            voluptates expedita iure adipisci voluptatum! Dignissimos amet nam necessitatibus consequuntur nihil rem
+            natus eum tenetur eos commodi, quibusdam quae ea assumenda molestias quo temporibus, incidunt debitis eius
+            officiis facilis delectus reiciendis! Doloremque deserunt vero beatae voluptatem, quasi tempore quia dicta
+            modi ipsam quibusdam repudiandae alias, corporis eveniet. Molestias tempore quasi, odio quos iure assumenda
+            pariatur ut debitis, ad sapiente ullam quod. Veritatis maxime, libero ducimus soluta aliquam quasi
+            reiciendis animi deserunt provident ad natus enim exercitationem modi nisi laboriosam veniam nesciunt
+            possimus est maiores, ipsam laborum!</p>
+    </div>
+
+    <script>
+       // var string = "this";
+        var name= "kishan";
+        var channel ='kd gamezone'
+        var message= "kishan is good boy";
+        var temp=`'${name}' is a nice person and he has a channel called '${channel}'`;
+        //console.log(string +name+message);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`length of name is ${len}`);
+
+        console.log("hello \\nworld \n kishan\tand\b")
+
+        var y = new String("this");
+        console.log(y);
+        document.getElementById('content').innerHTML='<h3> this is heading</h3>'
+    </script>
+
+</body>
+
+</html>

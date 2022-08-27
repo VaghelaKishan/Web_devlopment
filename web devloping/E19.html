@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+       
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(144, 239, 10);
+        }
+        .container{
+            background-color: rgb(34, 219, 157);
+            border: 3px rgb(33, 70, 181) solid;
+            /* padding like this */
+            /*padding-top: 90px;
+            padding-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 40px;*/
+
+            /* padding: 23px 56px 6px 70px; /* padding & margin  * top right bottom left; */
+            padding: 20px 30px ;/* padding: y(top/bottom) x(left/right); */
+            margin: 20px 19px;
+            border-radius: 23px;
+            width: 800px;
+            height: 150px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ea. At voluptate vero sit aperiam recusandae ut, rem consectetur quibusdam iusto quas exercitationem, eveniet sunt. Facilis atque odio ab molestias!</p>
+    </div>
+
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ea. At voluptate vero sit aperiam recusandae ut, rem consectetur quibusdam iusto quas exercitationem, eveniet sunt. Facilis atque odio ab molestias!</p>
+    </div>
+
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ea. At voluptate vero sit aperiam recusandae ut, rem consectetur quibusdam iusto quas exercitationem, eveniet sunt. Facilis atque odio ab molestias!</p>
+    </div>
+    
+</body>
+</html>

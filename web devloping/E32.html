@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before ana After pseudo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url('pexels-mads-thomsen-2739013.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .navigation {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+
+        }
+
+        section {
+            height: 344px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+
+        }
+
+        /*section::after{
+            content: "this is content";
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quo non modi ut sunt magni totam
+            pariatur eaque quae ea maxime amet dignissimos repellat consectetur, ipsa animi nostrum ex placeat?</p>
+    </section>
+    <hr>
+</body>
+
+</html>

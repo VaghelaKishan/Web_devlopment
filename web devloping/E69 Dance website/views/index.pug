@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title Kishan Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+              img(src="/static/img/logo.png")
+              | KDA
+            li #[a(href="/") home ]
+            li #[a(href="/") about ]
+            li #[a(href="/") services ]
+            li #[a(href="/") class info ]
+            li #[a(href="/") contact us ]
+
+        section#introsection
+            div Welcome to Kishan's dance Academy
+            div.small Eat Sleep Dance Repeat
+
+        section#missionsection 
+            h2 Our Mission
+            div.card 
+              h3 Dance Perfection
+                div.card-img 
+                  img(src="/static/img/1.png")
+
+                div.card-content 
+                  p This is the best dance academy of the universe
+            div.card 
+              h3 Dance the way you like
+                div.card-img 
+                  img(src="/static/img/2.png")
+
+                div.card-content 
+                  p This is the best dance academy of the universe
+
+            div.card 
+              h3 Expert Teaching
+                div.card-img 
+                  img(src="/static/img/3.png")
+
+                div.card-content 
+                  p This is the best dance academy of the universe
+
+        section#sponserssection
+            h2 Our Sponsers
+            div#sponsers 
+              img(src="/static/img/img2.png", alt="sponser image",class="spimage")
+              img(src="/static/img/img3.png", alt="sponser image",class="spimage")
+              img(src="/static/img/img4.png", alt="sponser image",class="spimage")
+        
+        footer#footer 
+            | Copyright 2022 KishanDanceAcademy.com | All rights reserved
+
+    script
+      include ../static/index.js

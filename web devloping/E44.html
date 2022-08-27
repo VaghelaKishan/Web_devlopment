@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid + media queries</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width:500px) and (min-width:300px) {
+        body {
+            background-color: rgb(44, 6, 180);
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (max-width:800px) and (min-width:500px) {
+        body {
+            background-color: rgb(196, 241, 12);
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: rgb(28, 177, 14);
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: rgb(203, 162, 109);
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>homd</span>
+            <span>about</span>
+            <span>contact us</span>
+            <span>services</span>
+        </nav>
+        <section class="bdr">
+            <h2>css tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a consequuntur voluptatem numquam quibusdam
+                id eum provident magnam! Similique dolor facilis quo. Provident deserunt, labore dicta doloribus at
+                illum amet distinctio maiores nihil nobis rem saepe facilis aperiam nostrum iure temporibus unde
+                reiciendis nisi? Corporis itaque nulla voluptates fugiat cum, deserunt maiores nostrum laboriosam,
+                cupiditate explicabo nihil illo aperiam voluptatibus, velit facere mollitia quae et vel quis saepe
+                delectus sapiente. Amet molestiae cum praesentium ratione quibusdam natus unde sequi, exercitationem,
+                atque pariatur perferendis, soluta ullam. Reiciendis tempore esse quasi quis in veniam vero dolorum
+                placeat delectus quaerat corporis, error nobis debitis, sed minima nisi officia totam aut ullam cum iste
+                deserunt doloribus officiis cumque. Ipsam laudantium necessitatibus est repudiandae dignissimos ea
+                reiciendis?</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cupiditate.</footer>
+
+</body>
+
+</html>

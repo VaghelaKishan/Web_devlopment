@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /*border: 2px solid red;*/
+            margin: 23px 12px;
+            background-color: rgb(85, 84, 84);
+            /*box-shadow: offset-x, offset-y, blur-radius, spread-radius, color;*/
+            box-shadow: 10px 10px 10px 1px green;
+
+            box-shadow: inset 3px 5px blue;
+
+            box-shadow:  5px 6px yellow, 8px 9px red;
+        }
+
+        .card h2{
+            text-shadow: 3px 4px 3px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at provident animi vitae aperiam,
+                aspernatur voluptatum a, odit dolore harum perspiciatis iste voluptate aut molestiae architecto!
+                Veritatis dolores tempore corrupti, quam hic ipsa facilis quis!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at provident animi vitae aperiam,
+                aspernatur voluptatum a, odit dolore harum perspiciatis iste voluptate aut molestiae architecto!
+                Veritatis dolores tempore corrupti, quam hic ipsa facilis quis!</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at provident animi vitae aperiam,
+                aspernatur voluptatum a, odit dolore harum perspiciatis iste voluptate aut molestiae architecto!
+                Veritatis dolores tempore corrupti, quam hic ipsa facilis quis!</p>
+        </div>
+    </div>
+</body>
+
+</html>

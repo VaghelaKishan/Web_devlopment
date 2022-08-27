@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 5px solid rgb(255, 14, 183);
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: bisque;
+
+        }
+
+        .item {
+            border: 5px solid rebeccapurple;
+            padding: 12px 5px;
+            margin: 12px 5px;
+            background: rgb(99, 185, 214);
+        }
+
+        #fruits {
+            float: left;
+            width: 50%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #icecream {
+
+            width: 100%;
+            clear: both;
+        }
+
+        p,
+        h1 {
+            text-align: center;
+            text-align: justify;
+            color: rgb(12, 11, 7);
+
+        }
+
+        h1 {
+            margin: auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h1>Fruits</h1>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maxime
+                recusandae dolores quidem adipisci praesentium itaque natus quasi nostrum dignissimos! Beatae
+                consequatur sed minima deleniti veritatis! Officiis, ea. Iste, nobis!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h1>computer</h1>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor similique
+                odio, vel at necessitatibus reiciendis corporis recusandae rerum soluta alias reprehenderit, velit
+                perferendis cupiditate itaque fuga, quam doloremque nesciunt tempore?</p>
+        </div>
+
+        <div id="icecream" class="item">
+            <h1>icecream</h1>
+            <p id="icecreampara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem
+                iure odit, aliquam ex omnis eum facere ipsum possimus dolor quidem doloribus dicta reiciendis neque
+                magnam cumque asperiores esse placeat?</p>
+        </div>
+    </div>
+</body>
+
+</html>
